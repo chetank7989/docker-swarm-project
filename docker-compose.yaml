@@ -1,0 +1,26 @@
+version: '3.9'
+services:
+  movies:
+    image: chetan7989/devops
+    ports:
+      - "84:80"
+    deploy:
+      replicas: 3
+  dth:
+    image: chetan/pythonlife
+    ports:
+      - "85:80"
+    deploy:
+      replicas: 3
+  recharge:
+    image: chetan7989/aws
+    ports:
+      - "86:80"
+    deploy:
+      replicas: 3
+  paytm:
+    image: chetan7989/paytm
+    ports:
+      - "87:80"
+    deploy:
+      replicas: 3
